@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container d-flex">
+      <div>
+        <h2>Todo</h2>
+
+        <div id="todo" class="task-container">
+          <div class="task task-todo" draggable="true">Clean room</div>
+          <div class="task task-todo" draggable="true">Do homehork</div>
+          <div class="task task-todo" draggable="true">Wash dishes</div>
+        </div>
+
+        <div class="task-input">
+          <input type="text" placeholder="Enter task" />
+        </div>
+      </div>
+      <div>
+        <h2>Doing</h2>
+
+        <div id="doing" class="task-container">
+          <div class="task task-doing" draggable="true">Chill</div>
+        </div>
+      </div>
+      <div>
+        <h2>Done</h2>
+
+        <div id="done" class="task-container">
+          <div class="task task-done" draggable="true">Slept</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>

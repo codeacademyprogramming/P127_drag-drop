@@ -1,0 +1,90 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  transition: 150ms all linear;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: rgb(255, 200, 0);
+}
+
+.container {
+  padding: 0 200px;
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  gap: 12px;
+}
+
+.d-flex > div {
+  flex: 1;
+  background: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex > div > h2 {
+  text-align: center;
+  font-size: 34px;
+}
+
+.d-flex > div > div {
+  flex: 1;
+}
+
+.task-container {
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.task {
+  box-shadow: 0 4px 10px #e3e3e3;
+  min-height: 40px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  cursor: move;
+}
+
+.drag-item {
+  /* transform: rotateX(90deg) */
+}
+
+.task-todo {
+  background: royalblue;
+  color: white;
+}
+
+.task-input {
+  padding: 0 14px 50px;
+  height: max-content;
+  flex-grow: unset !important;
+}
+
+.task-input > input {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  height: 48px;
+  outline: none;
+  padding: 0 8px;
+}
+
+.task-doing {
+  background: #fcbe00;
+}
+
+.task-done {
+  background: greenyellow;
+}
